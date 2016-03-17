@@ -17,8 +17,8 @@
             <url>http://repo.onarandombox.com/content/groups/public</url>
         </repository>
         <repository>
-            <id>Official Bukkit</id>
-            <url>http://repo.bukkit.org/content/repositories/public</url>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
     </repositories>
 
@@ -198,9 +198,7 @@ and adjust the build number accordingly -->
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.7.9-R0.2</version>
-            <type>jar</type>
-            <scope>compile</scope>
+            <version>1.9-R0.1-SNAPSHOT</version>
         </dependency>
         <!-- Start of Multiverse Core Dependency -->
         <dependency>
@@ -218,6 +216,12 @@ and adjust the build number accordingly -->
             <version>1.0.9</version>
             <type>jar</type>
             <scope>compile</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.bukkit</groupId>
+                    <artifactId>craftbukkit</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!-- End of Logging Dependency -->
         <!-- Start of ConfigurationLib Dependency -->

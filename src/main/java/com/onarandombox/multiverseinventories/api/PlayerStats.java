@@ -7,8 +7,9 @@ public class PlayerStats {
 
     /**
      * Number of slots in Minecraft player inventory.
+     * 9 QUICKBAR, 27 CONTAINER, 4 ARMOR, 1 OFFHAND
      */
-    public static final int INVENTORY_SIZE = 36;
+    public static final int INVENTORY_SIZE = 41;
     /**
      * Number of slots for armor for player.
      */
